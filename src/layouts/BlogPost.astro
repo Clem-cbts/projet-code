@@ -18,9 +18,21 @@ import FooterComponent from '../components/Footer.astro';
 	<body>
 		<HeaderComponent />
 		<main>
-			<!--La balise slot sera remplacée par le contenu des pages dans lesquelles on aura importé le layout Base.astro -->
-			<slot />
+			<article>
+				<!--La balise slot sera remplacée par le contenu des pages dans lesquelles on aura importé le layout Base.astro -->
+				<slot />
+			</article>
 		</main>
 		<FooterComponent />
 	</body>
 </html>
+
+<style>
+	main{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	article {
+		background-color: bisque;
+	}
+</style>
