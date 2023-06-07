@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
-import HeaderComponent from '../components/Header.astro';
-import FooterComponent from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 
@@ -15,12 +15,12 @@ import FooterComponent from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>Notre super blog</title>
 	</head>
-	<body>
-		<HeaderComponent />
+	<body>+
+		<Header />
 		<main>
 			<!--La balise slot sera remplacée par le contenu des pages dans lesquelles on aura importé le layout Base.astro -->
 			<slot />
 		</main>
-		<FooterComponent />
+		<Footer />
 	</body>
 </html>
