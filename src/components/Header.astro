@@ -1,20 +1,38 @@
 <header>
-	<p>Notre super Blog</p>
+	<a href="/"><img src="" alt=""></a>
 	<nav>
-		<a href="/">Accueil</a>
+		<a href="src/pages/index.astro">Accueil</a>
+		<a href="src/pages/blog/index.astro">Blog</a>
 	</nav>
 </header>
 
 <style>
-
 	header {
-		display : flex;
-		background-color: blanchedalmond;
+		display : grid;
+		grid-template-columns: 40% 60%;
+		background-color: #ABE4A1;
 		padding: 2vw 5vw;
 	}
 	
-	nav {
-		display: flex;
-		justify-content: center;
+	header>a {
+		grid-column-start: 1;
 	}
+
+	nav {
+		grid-column-start: 2;
+	}
+
+	nav>a {
+		margin-right: 5%;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: #fff;
+	}
+	
 </style>

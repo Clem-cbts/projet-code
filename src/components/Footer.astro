@@ -1,1 +1,40 @@
-<footer>Made in Toulouse, France.</footer>
+<footer>
+
+    <img src="src/pages/blog/assets/img/harmony-removebg-preview.png" alt="logo" width="150px" >
+    <nav>
+        <a href="src/pages/index.astro">Accueil</a>
+        <a href="src/pages/blog/index.astro">Blog</a>
+        
+    </nav>
+
+</footer>
+
+<style>
+    footer{
+        background-color: #abe4a1;
+        padding: 1% 5%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    img {
+       /* display: inline-block;*/
+        grid-column-start: 1;
+        }
+
+    a{ 
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover{
+        color: #e3a1d0;
+    }
+
+    nav {
+        grid-column-start: 2;
+        gap: 500px;
+    }
+    
+</style>
