@@ -15,7 +15,7 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>Notre super blog</title>
 	</head>
-	<body>+
+	<body>
 		<Header />
 		<main>
 			<!--La balise slot sera remplacée par le contenu des pages dans lesquelles on aura importé le layout Base.astro -->
@@ -24,3 +24,10 @@ import Footer from '../components/Footer.astro';
 		<Footer />
 	</body>
 </html>
+
+
+<style>
+	main {
+		margin: 15% auto;
+	}
+</style>
