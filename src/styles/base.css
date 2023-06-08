@@ -1,6 +1,48 @@
 body{
 	font-size: 1.1rem;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #333;
-	background-color: #eee;
+	color: #f7f7f7;
+	background-color: #2b2b2b;
+}
+
+.intro {
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: 25% 1fr;
+	align-items: center;
+	column-gap: 20px;
+}
+
+h1{
+	font-size: 3rem;
+	text-align: center;
+}
+
+h2{
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+ul{
+	padding-inline-start: 20px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.lien{
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.lien p a{
+	color: green;
+	text-align: end;
+	display: flex;
+	justify-content: end;
+}
+
+.lien p a:hover{
+	color: white;
 }
