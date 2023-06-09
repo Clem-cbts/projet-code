@@ -1,10 +1,25 @@
 ---
-import BaseLayout from '../layouts/Base.astro';
+import BaseLayout from "../layouts/Base.astro";
 ---
 
 <BaseLayout>
-	<h1>Harmony Insight</h1>
-	<p>Un blog sur la musique</p>
+	<div class="div">
+		<lottie-player
+			src="https://lottie.host/f861faf3-5571-4926-82b2-8f82b987c329/yLyGX1D0Ou.json"
+			background="transparent"
+			speed="0.2"
+			loop
+			autoplay
+		>
+		</lottie-player>
+		<h1>Harmony Insight</h1>
+		<p>Un blog sur la musique</p>
+		<a href="blog">
+			<button>
+				En voir plus
+			</button>
+		</a>
+	</div>
 </BaseLayout>
 
 <style>
@@ -13,9 +28,43 @@ import BaseLayout from '../layouts/Base.astro';
 		text-align: center;
 	}
 
-	
+	.div {
+		margin: -23vw auto 23vw auto;
+	}
+
+	lottie-player {
+		position: relative;
+		margin: auto;
+		width: 70%;
+		z-index: 0;
+	}
 
 	h1 {
+		position: relative;
+		margin-top: -40vw;
 		font-size: 5rem;
+		z-index: 1;
+	}
+
+	button {
+		position: relative;
+		margin-top: 2%;
+		background-color: #abe4a1;
+		padding: 0.5% 1.5%;
+		border-radius: 20px;
+		z-index: 1;
+	}
+
+	button:hover {
+		background-color: #010101;
+		border: 1px solid #abe4a1;
+	}
+
+	a{
+		color: #010101;
+	}
+
+	a:hover{
+		color: #abe4a1;
 	}
 </style>

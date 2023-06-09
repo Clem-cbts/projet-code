@@ -1,29 +1,43 @@
 <header>
-	<a href="/"><img src="" alt=""></a>
+	<a href="/">
+		<img
+			src="public/img/logo.png"
+			alt=""
+			width="100px"
+		/>
+		</a>
 	<nav>
-		<a href="src/pages/index.astro">Accueil</a>
-		<a href="src/pages/blog/index.astro">Blog</a>
+		<a href="/">Accueil</a>
+		<a href="blog">Blog</a>
 	</nav>
 </header>
 
 <style>
 	header {
-		display : grid;
-		grid-template-columns: 40% 60%;
-		background-color: #ABE4A1;
-		padding: 2vw 5vw;
+		display: grid;
+		position: relative;
+		grid-template-columns: 50% 50%;
+		background-color: #abe4a1;
+		padding: 0.5vw 5vw;
+		margin-bottom: 8%;
+		z-index: 1;
 	}
-	
-	header>a {
+
+	header > a {
 		grid-column-start: 1;
+		display: flex;
+		justify-content: end;
 	}
 
 	nav {
+		display: flex;
+		align-items: center;
 		grid-column-start: 2;
+		text-align: left;
 	}
 
-	nav>a {
-		margin-right: 5%;
+	nav > a {
+		margin-right: 2%;
 	}
 
 	a {
@@ -31,8 +45,7 @@
 		text-decoration: none;
 	}
 
-	a:hover{
-		color: #fff;
+	a:hover {
+		color: #e3a1d0;
 	}
-	
 </style>

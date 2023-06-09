@@ -1,20 +1,27 @@
 <footer>
 
-    <img src="/img/logo.png" alt="logo" width="150px" >
-    <nav>
-        <a href="src/pages/index.astro">Accueil</a>
-        <a href="src/pages/blog/index.astro">Blog</a>
-        
-    </nav>
 
+    <a href="/">
+		<img
+			src="public/img/logo.png"
+			alt=""
+			width="100px"
+		/>
+		</a>
+
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="blog">Blog</a>
+    </nav>
 </footer>
 
 <style>
-    footer{
+    footer {
         background-color: #abe4a1;
-        padding: 1% 5%;
+        padding: 0.5vw 5vw;
         display: grid;
-        grid-template-columns: 50% 50%;
+        position: relative;
+        grid-template-columns: 45% 55%;
         align-items: center;
         margin-top: 8%;
     }
@@ -31,11 +38,29 @@
 
     a:hover{
         color: #e3a1d0;
+        z-index: 1;
+
     }
 
     nav {
         grid-column-start: 2;
-        gap: 500px;
+        text-align: left;
     }
-    
+
+    nav > a {
+        margin-right: 5%;
+    }
+
+    img {
+        grid-column-start: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: #e3a1d0;
+    }
 </style>
