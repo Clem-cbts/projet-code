@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/Base.astro";
-const allPosts = await Astro.glob('./*.md');
+const allPosts = await Astro.glob("./*.md");
 ---
 
 <BaseLayout>
@@ -10,7 +10,7 @@ const allPosts = await Astro.glob('./*.md');
             {
                 allPosts.map((post) => (
                     <li>
-                        <a href={`${post.url}/`}>{post.frontmatter.title}</a>
+                        <a href={`${post.url}/`}>{post.frontmatter.img}</a>
                     </li>
                 ))
             }

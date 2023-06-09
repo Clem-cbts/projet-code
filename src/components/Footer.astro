@@ -1,40 +1,45 @@
 <footer>
-
-    <img src="src/pages/blog/assets/img/harmony-removebg-preview.png" alt="logo" width="150px" >
+    <img
+        src="src/pages/blog/assets/img/harmony-removebg-preview.png"
+        alt="logo"
+        width="150px"
+    />
     <nav>
         <a href="src/pages/index.astro">Accueil</a>
         <a href="src/pages/blog/index.astro">Blog</a>
-        
     </nav>
-
 </footer>
 
 <style>
-    footer{
+    footer {
         background-color: #abe4a1;
-        padding: 1% 5%;
+        padding: 0.5vw 5vw;
         display: grid;
-        grid-template-columns: 50% 50%;
+        position: relative;
+        grid-template-columns: 45% 55%;
         align-items: center;
-    }
-
-    img {
-       /* display: inline-block;*/
-        grid-column-start: 1;
-        }
-
-    a{ 
-        text-decoration: none;
-        color: black;
-    }
-
-    a:hover{
-        color: #e3a1d0;
+        z-index: 1;
     }
 
     nav {
         grid-column-start: 2;
-        gap: 500px;
+        text-align: left;
     }
-    
+
+    nav > a {
+        margin-right: 5%;
+    }
+
+    img {
+        grid-column-start: 1;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: #e3a1d0;
+    }
 </style>
