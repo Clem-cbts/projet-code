@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/BlogPost.astro
 title: Les records de Michael Jackson
+description: Dans cet article vous retrouverez quelques uns des très nombreux records de Michael Jackson.
 ---
 
-  # Les records de Michael Jackson
+# Les records de Michael Jackson
 
 <div class="intro">
   <img src="/img/mj.jpg" alt="" >

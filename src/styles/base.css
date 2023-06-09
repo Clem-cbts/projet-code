@@ -37,12 +37,16 @@ a{
 }
 
 .lien p a{
-	color: green;
+	color: #ABE4A1;
 	text-align: end;
 	display: flex;
 	justify-content: end;
 }
 
 .lien p a:hover{
-	color: white;
+	color: #e3a1d0;
+}
+
+.paragraphe{
+	margin-top: 15px;
 }
